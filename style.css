@@ -1,0 +1,316 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.parent {
+  color: white;
+  background-color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 1520px;
+  padding: 10px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+/* Logo */
+.logo img {
+  width: 202px;
+  height: 48px;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li {
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color:#52d1c6;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.phone {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Donate Button */
+.donate-btn {
+  background: #ff3b30;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 2px solid transparent; /* Prevent layout shift */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.donate-btn img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
+.donate-btn:hover {
+  background: #000;           
+  border: 2px solid #fff;     
+  color: #fff;               
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 950px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 100px;
+}
+
+/* Hero Background Image */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+  color: white;
+  padding: 40px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+
+  
+}
+
+/* Hero Button */
+.btn {
+  background: #52d1c6;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3cb5ab;
+  border: 2px solid #fff; 
+}
+/*program*/
+.program-section {
+ 
+  background-color: #fcf4f0;
+  padding: 100px 0; 
+}
+
+.program-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 60px; 
+}
+
+/* Image Column */
+.program-image img {
+  height: 444px;
+  
+  width: 556px; 
+  display: block;
+}
+
+/* Text Details Column */
+
+.program-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #52d1c6; 
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.program-details h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #263B5C;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.program-description {
+  font-size: 16px;
+  color: #777777;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.program-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+
+.btn-donate-now {
+  background: #ff6b4a; 
+  color: white;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-donate-now:hover {
+  background: none;
+  border: 1px solid #f15b43;
+  color: #f15b43; 
+}
+
+/* View Programs Button (Outline) */
+.btn-view-programs {
+  background: transparent;
+  color: #f15b43;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  /* Matching the solid button's color for the border */
+  border: 1px solid #ff6b4a; 
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-view-programs:hover {
+  background: #ff6b4a;
+  color: white;
+}
+.about-block {
+ 
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 60px; 
+}
+.about-image-container {
+    flex-shrink: 0; 
+}
+
+/* Image Column */
+.about-image-container img {
+  height: 493px;
+  
+  width: 576px; 
+  display: block;
+}
+
+/* Text Details Column */
+
+
+.about-lable {
+  font-size: 16px;
+  font-weight: 500;
+  color: #52d1c6; 
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-details h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #263B5C;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  font-size: 16px;
+  color: #777777;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 20px;
+}
+.about-button {
+  background: #ff6b4a; 
+  color: white;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.about-button:hover {
+   background: none;
+  border: 1px solid #f15b43;
+  color: #f15b43;
+}
