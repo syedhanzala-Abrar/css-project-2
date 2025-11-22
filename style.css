@@ -35,6 +35,10 @@
   list-style: none;
   gap: 25px;
 }
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .nav-links li {
   color: #fff;
@@ -46,7 +50,9 @@
 .nav-links li:hover {
   color:#52d1c6;
 }
-
+.nav-links a:hover {
+  color:#52d1c6;
+}
 /* Right Section */
 .nav-right {
   display: flex;
@@ -110,7 +116,7 @@
 
 /* Hero Content */
 .hero-content {
-  position: relative;
+  position:relative;
   max-width: 600px;
   z-index: 1;
   color: white;
@@ -256,9 +262,7 @@
   margin: 0 auto; 
   gap: 60px; 
 }
-.about-image-container {
-    flex-shrink: 0; 
-}
+
 
 /* Image Column */
 .about-image-container img {
@@ -310,7 +314,246 @@
   transition: background-color 0.3s;
 }
 .about-button:hover {
-   background: none;
+  background: none;
   border: 1px solid #f15b43;
   color: #f15b43;
 }
+/*slider section*/
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.money {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.money h3 {
+    font-size: 22px;
+    color: #1c8f5f;
+}
+
+.money span {
+    font-size: 14px;
+    color: #777;
+}
+
+.donate-btn {
+    width: 100%;
+    background: #ff5c37;
+    color: white;
+    border: none;
+    padding: 14px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donate-btn:hover {
+    background: #e1492e;
+}
+
+.help-block {
+ 
+  background-color: bisque;
+  padding-top: 100px;
+  padding-bottom: 100px; 
+}
+
+.help-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 60px; 
+}
+
+/* Image Column */
+.help-image img {
+  height: 536px;
+  
+  width: 548px; 
+  display: block;
+}
+
+/* Text Details Column */
+.help-details {
+  
+}
+
+.help-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #52d1c6; 
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.help-details h2 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #263B5C;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.help-description {
+  font-size: 18px;
+  color: #777777;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+.button {
+    
+  background: #ff6b4a; 
+  color: white;
+  padding: 16px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+    background: none;
+  border: 1px solid #f15b43;
+  color: #f15b43;
+}
+/*helping today section*/
+
+.helping-today-section {
+    position: relative;
+    padding: 60px 20px; 
+    color: white; 
+    text-align: center; 
+    /* Set your background image here */
+    background-image: url(accest/red\ back\ ground.webp);
+}
+
+.content-wrapper {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    position: relative;
+}
+
+/* --- Headings --- */
+
+.pre-heading {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* --- Service Columns Layout (Flexbox) --- */
+
+.service-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 30px; 
+    padding: 0 40px; 
+}
+
+
+.service-item {
+    max-width: 300px; 
+    text-align: center;
+    padding: 20px;
+}
+
+.service-icon {
+    width: 60px; /* Size of the icon */
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/*footer*/
+
+
+footer {
+         background-color:#263B5C;
+         color: white;
+         display: flex;
+         justify-content: space-around;
+         align-items: flex-start;
+        padding: 50px 0;
+      }
+
+      footer div {
+         width: 250px;
+      }
+
+      ul {
+         list-style: none;
+         padding: 0;
+      }
+      #section1 {
+    background-color: #F15B43;
+    color: #fff ;
+    padding: 11px 20px;
+    font-size: 16px;
+    border-radius: 0px;
+    font-weight: 400;
+    cursor: pointer;
+      }
